@@ -10,7 +10,7 @@
       >
         <div class="container title-box has-text-centered">
           <h1 class="title is-3 is-spaced">
-            Create your new shiny ShareRing Paper Wallet 😎
+            Create your new shiny ShareRing Paper Wallet
           </h1>
           <hr>
           <h2 class="subtitle is-5">
@@ -22,7 +22,7 @@
             v-model="mnemonic" 
             class="textarea mnemonic-field has-text-weight-bold has-fixed-size has-text-centered is-spaced" 
             placeholder="Mnemonic Key"
-            rows="2"
+            rows="3"
             readonly 
           />
           <br>

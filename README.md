@@ -12,11 +12,9 @@ Crypto wallet is the pair of your **private key** and your **address**. Private 
 Generate your wallet and keep it ready for the mainnet release. Imagine, you can be one of the first [ShareRing](https://sharering.network/en) wallet owners in the whole world! Dont lose your mnemonic phrase, it might be probably used to import your wallet into the official [ShareRing](https://sharering.network/en) app when it's released.
 
 ### Example wallet with explanation.
-Address - send it to people to receive funds. Example: **shareledger1l84qrdasnt3qyv4v46ahw0l6qusmm0tpquvsrz**
-
-Private key - use it to send funds to other people. Keep it secret. Example: **bbe7b931bd21ba115fd1cd358ca49bfec3514cd97f362363054b00e84bfdb3d7**
-
-Mnemonic phrase - use it to import your wallet into upcoming ShareRing app. Keep it secret. Example phrase: **palace upper fiction remove practice seven defense gate century believe lock kangaroo**
+1. Address - send it to people to receive funds. 
+2. Private key - use it to send funds to other people. Keep it secret.
+3. Mnemonic phrase - use it to import your wallet into the upcoming ShareRing app. Keep it secret. 
 
 ### Build Setup
 The wallet generator app is developed with Vue framework (NuxtJS). You are able to download the project and run it on your own local offline machine. Please make sure you have the latest version of NodeJS installed.

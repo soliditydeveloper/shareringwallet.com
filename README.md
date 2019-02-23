@@ -13,8 +13,8 @@ Generate your wallet and keep it ready for the mainnet release. Imagine, you can
 
 ### Wallet components with explanation.
 1. Address - send it to people to receive funds. 
-2. Private key - use it to send funds to other people. Keep it secret.
-3. Mnemonic phrase - use it to import your wallet into the upcoming ShareRing app. Keep it secret. 
+2. Private key - it provides access to your funds. Keep it secret.
+3. Mnemonic phrase - it provides access to your funds. Keep it secret. 
 
 ### Build Setup
 The wallet generator app is developed with Vue framework (NuxtJS). You are able to download the project and run it on your own local offline machine. Please make sure you have the latest version of NodeJS installed.

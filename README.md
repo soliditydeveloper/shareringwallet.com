@@ -11,7 +11,7 @@ Crypto wallet is the pair of your **private key** and your **address**. Private 
 ### What to do with this wallet?
 Generate your wallet and keep it ready for the mainnet release. Imagine, you can be one of the first [ShareRing](https://sharering.network/en) wallet owners in the whole world! Dont lose your mnemonic phrase, it might be probably used to import your wallet into the official [ShareRing](https://sharering.network/en) app when it's released.
 
-### Example wallet with explanation.
+### Wallet components with explanation.
 1. Address - send it to people to receive funds. 
 2. Private key - use it to send funds to other people. Keep it secret.
 3. Mnemonic phrase - use it to import your wallet into the upcoming ShareRing app. Keep it secret. 

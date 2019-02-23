@@ -1,4 +1,4 @@
-# ShareRing Paper Wallet Web App
+# ShareRing Paper Wallet Generator
 Welcome to our cool community project!
 
 [Visit Live Website](https://shareringwallet.com/)

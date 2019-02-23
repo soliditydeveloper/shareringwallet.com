@@ -17,7 +17,7 @@ Generate your wallet and keep it ready for the mainnet release. Imagine, you can
 3. Mnemonic phrase - it provides access to your funds. Keep it secret. 
 
 ### Build Setup
-The wallet generator app is developed with Vue framework (NuxtJS). You are able to download the project and run it on your own local offline machine. Please make sure you have the latest version of NodeJS installed.
+The wallet generator app is developed with Vue framework (NuxtJS). You are able to download the project and run it on your own local offline machine. Please make sure you have the latest version of NodeJS installed. If you previously had NuxtJS  installed on your machine globally, please make sure you have the latest version before you execute build commands.
 ``` bash
 # install dependencies
 $ npm install

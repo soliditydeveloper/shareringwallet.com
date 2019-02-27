@@ -4,6 +4,7 @@ const description = 'Create your own ShareRing crypto paper wallet and be prepar
 
 module.exports = {
   mode: 'universal',
+  debug: true,
 
   /*
   ** Headers of the page
@@ -50,7 +51,7 @@ module.exports = {
   */
   plugins: [ 
     { src: '~/plugins/bulma-checkradio', ssr: false },
-    { src: '~/plugins/shr-keys/index', ssr: false } 
+    { src: '~/plugins/shr-keys/index', ssr: false }
   ],
 
   /*

@@ -10,7 +10,7 @@
       >
         <div class="container title-box has-text-centered">
           <h1 class="title is-3 is-spaced">
-            Create your new shiny ShareRing Paper Wallet
+            Create your new secure ShareRing Paper Wallet
           </h1>
           <hr>
           <h2 class="subtitle is-5">
@@ -74,6 +74,9 @@
           </h3>
         </div>
         <div class="container has-text-centered content-box">
+          <div 
+            class="identicon" 
+            v-html="identicon" />
           <div class="field">
             <label class="label">Your address for receiving SHR</label>
             <div class="control has-icons-right">
@@ -96,7 +99,7 @@
                 v-model="wallet.privateKey" 
                 type="text"
                 class="input has-fixed-size has-text-centered is-spaced" 
-                placeholder="Address"
+                placeholder="Private key"
                 readonly 
               >
               <span class="icon is-right"><fa :icon="['fas', 'key']" /></span>
@@ -123,24 +126,37 @@
 </template>
 
 <script>
+import jdenticon from 'jdenticon'
 export default {
   components: {},
   data: function() {
     return {
       isMnemonicSaved: false,
       isMnemonicConfirmed: false,
-      mnemonic: ''
+      mnemonic: '',
+      identicon: '',
+      identiconSize: 128
     }
   },
   computed: {
     wallet: function() {
-      return this.$shrKeys.createAccount(this.mnemonic)
+      if (this.$shrKeys) {
+        return this.$shrKeys.createAccount(this.mnemonic)
+      } else return null
+    }
+  },
+  watch: {
+    'wallet.address': function(val) {
+      this.regenerateIdenticon()
     }
   },
   mounted: function() {
     this.mnemonic = this.$shrKeys.KeyPair.createMnemonic('English', 'secp256k1')
   },
   methods: {
+    regenerateIdenticon: function() {
+      this.identicon = jdenticon.toSvg(this.wallet.address, this.identiconSize)
+    },
     switchMnemonicSaved: function() {
       this.isMnemonicSaved = !this.isMnemonicSaved
     },
@@ -156,6 +172,7 @@ export default {
         return
       }
       this.isMnemonicConfirmed = true
+      this.regenerateIdenticon()
     },
     goBackToMain: function() {
       this.isMnemonicConfirmed = false
@@ -189,5 +206,15 @@ export default {
 }
 .default-checkbox {
   outline: none;
+}
+.identicon {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 128px;
+  height: 128px;
+  /* border-width: 2px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgb(220, 220, 220); */
 }
 </style>

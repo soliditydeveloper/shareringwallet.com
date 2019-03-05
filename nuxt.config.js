@@ -1,10 +1,10 @@
 const pkg = require('./package')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const websiteTitle = 'ShareRing Paper Wallet Generator'
 const description = 'Create your own ShareRing crypto paper wallet and be prepared for the mainnet! Use the generated wallet to store your SHR tokens and transact on the ShareLedger network.'
 
 module.exports = {
   mode: 'universal',
-  debug: true,
 
   /*
   ** Headers of the page

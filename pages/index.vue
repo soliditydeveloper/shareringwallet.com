@@ -114,7 +114,6 @@
           >
             <span class="icon"><fa :icon="['fas', 'question']" /></span><span>Support</span>
           </a>
-
           <a 
             class="button is-danger"
             @click="goBackToMain"

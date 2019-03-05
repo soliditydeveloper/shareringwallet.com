@@ -4,7 +4,8 @@
     <nuxt />
     <section class="section has-text-centered footer">
       <p>
-        <b>Open Source <a target="_blank" href="https://sharering.network/">ShareRing (SHR)</a> Paper Wallet Generator.</b><br>Made with ❤️ by the <a target="_blank" href="https://sharering.network/">ShareRing</a> Community.
+        <a target="_blank" href="https://go.dx.exchange/visit/?bta=35361&brand=dxexchange&campaign=348&afp=wallet"><b>Purchase SHR only on a Regulated European DX Exchange (ref link)</b></a><br><br>
+        <b>Open Source <a target="_blank" href="https://sharering.network/">ShareRing (SHR)</a> Paper Wallet Generator.</b><br>Made with ❤️ by the dedicated ShareRing Community.
       </p>
       <hr>
       <span class="icon is-large">
